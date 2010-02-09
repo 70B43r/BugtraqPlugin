@@ -178,7 +178,7 @@
                     "_83A530AE78B0B8BC5F90F51D64569358"
                     {
                     "Name" = "8:Interop.BugTraqProvider.dll"
-                    "Attributes" = "3:512"
+                    "Attributes" = "3:576"
                     }
                 }
             "SourcePath" = "8:Interop.BugTraqProvider.dll"
@@ -186,7 +186,7 @@
             "Tag" = "8:"
             "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
             "Condition" = "8:"
-            "Transitive" = "11:FALSE"
+            "Transitive" = "11:TRUE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
@@ -195,7 +195,7 @@
             "SharedLegacy" = "11:FALSE"
             "PackageAs" = "3:1"
             "Register" = "3:1"
-            "Exclude" = "11:TRUE"
+            "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
@@ -256,7 +256,7 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BugtraqPlugin"
         "ProductCode" = "8:{E43EA1B9-4334-468A-A884-410698E20EB2}"
-        "PackageCode" = "8:{F1BB5146-E1AF-4BC1-B0CC-CBBCD962F7F8}"
+        "PackageCode" = "8:{D47EDCB4-C014-4611-A55B-1A0B945A6FF8}"
         "UpgradeCode" = "8:{47EF8971-A4C5-4FA7-8F64-0507CD0F5144}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
@@ -849,7 +849,7 @@
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:1"
+            "ProjectOutputGroupRegister" = "3:2"
             "OutputConfiguration" = "8:Release|Any CPU"
             "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{83645E21-E943-48F8-81E7-FE6FC590DB74}"
