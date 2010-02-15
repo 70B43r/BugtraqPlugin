@@ -36,7 +36,7 @@ namespace BugtraqPlugin.DataProvider
 
       private const string ISSUE_DATAPATH = "issues/csv";
       private Uri dataRequestUri = null;
-      private Regex trailingParagraphs = new Regex("^(\")?(?<value>.*?)(\")?$", RegexOptions.Singleline | RegexOptions.IgnoreCase);
+      private Regex quotations = new Regex("^(\")?(?<value>.*?)(\")?$", RegexOptions.Singleline | RegexOptions.IgnoreCase);
       
       #endregion
 
@@ -94,8 +94,8 @@ namespace BugtraqPlugin.DataProvider
             while (!String.IsNullOrEmpty((line = reader.ReadLine())))
             {
                columnValues = line.Split(new string[] { "\",\"" }, StringSplitOptions.None);
-               columnValues[0] = trailingParagraphs.Replace(columnValues[0], "${value}");
-               columnValues[6] = trailingParagraphs.Replace(columnValues[6], "${value}");
+               columnValues[0] = quotations.Replace(columnValues[0], "${value}");
+               columnValues[6] = quotations.Replace(columnValues[6], "${value}");
 
                Issues.Add(new Issue(int.Parse(columnValues[0]), columnValues[6]));
             }
