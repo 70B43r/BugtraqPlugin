@@ -1,7 +1,7 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
 // Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
+// Module:            : BugtraqPluginContracts
 // Description        : Helper for building parameter string.
 // 
 // Repository         : $URL$
@@ -23,7 +23,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace BugtraqPlugin.DomainModel.Parameter
+namespace BugtraqPlugin.Contracts.DomainModel.Parameter
 {
    /// <summary>
    /// Helper class to build parameter string.

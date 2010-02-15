@@ -32,6 +32,8 @@
          this.columnCheckBox = new System.Windows.Forms.ColumnHeader();
          this.columnIssueId = new System.Windows.Forms.ColumnHeader();
          this.columnSummary = new System.Windows.Forms.ColumnHeader();
+         this.buttonOK = new System.Windows.Forms.Button();
+         this.buttonCancel = new System.Windows.Forms.Button();
          this.SuspendLayout();
          // 
          // listViewIssues
@@ -47,7 +49,7 @@
          this.listViewIssues.FullRowSelect = true;
          this.listViewIssues.Location = new System.Drawing.Point(12, 12);
          this.listViewIssues.Name = "listViewIssues";
-         this.listViewIssues.Size = new System.Drawing.Size(560, 261);
+         this.listViewIssues.Size = new System.Drawing.Size(620, 309);
          this.listViewIssues.TabIndex = 2;
          this.listViewIssues.UseCompatibleStateImageBehavior = false;
          this.listViewIssues.View = System.Windows.Forms.View.Details;
@@ -66,15 +68,40 @@
          this.columnSummary.Text = "Summary";
          this.columnSummary.Width = 350;
          // 
+         // buttonOK
+         // 
+         this.buttonOK.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+         this.buttonOK.DialogResult = System.Windows.Forms.DialogResult.OK;
+         this.buttonOK.Location = new System.Drawing.Point(12, 328);
+         this.buttonOK.Name = "buttonOK";
+         this.buttonOK.Size = new System.Drawing.Size(75, 23);
+         this.buttonOK.TabIndex = 3;
+         this.buttonOK.Text = "OK";
+         this.buttonOK.UseVisualStyleBackColor = true;
+         // 
+         // buttonCancel
+         // 
+         this.buttonCancel.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+         this.buttonCancel.DialogResult = System.Windows.Forms.DialogResult.Cancel;
+         this.buttonCancel.Location = new System.Drawing.Point(557, 328);
+         this.buttonCancel.Name = "buttonCancel";
+         this.buttonCancel.Size = new System.Drawing.Size(75, 23);
+         this.buttonCancel.TabIndex = 4;
+         this.buttonCancel.Text = "Cancel";
+         this.buttonCancel.UseVisualStyleBackColor = true;
+         // 
          // MainForm
          // 
+         this.AcceptButton = this.buttonOK;
          this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
          this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-         this.ClientSize = new System.Drawing.Size(584, 314);
+         this.CancelButton = this.buttonCancel;
+         this.ClientSize = new System.Drawing.Size(644, 362);
+         this.Controls.Add(this.buttonCancel);
+         this.Controls.Add(this.buttonOK);
          this.Controls.Add(this.listViewIssues);
          this.Name = "MainForm";
          this.Text = "Issues";
-         this.Controls.SetChildIndex(this.listViewIssues, 0);
          this.ResumeLayout(false);
 
       }
@@ -85,5 +112,7 @@
       private System.Windows.Forms.ColumnHeader columnCheckBox;
       private System.Windows.Forms.ColumnHeader columnIssueId;
       private System.Windows.Forms.ColumnHeader columnSummary;
+      private System.Windows.Forms.Button buttonOK;
+      private System.Windows.Forms.Button buttonCancel;
    }
 }

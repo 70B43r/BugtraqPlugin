@@ -1,8 +1,8 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
 // Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
-// Description        : Data provider base class.
+// Module:            : BugtraqPluginDataProvider
+// Description        : Data providerfor web based access.
 // 
 // Repository         : $URL$
 // Last changed by    : $LastChangedBy$
@@ -23,15 +23,17 @@ using System.Net;
 using System.Net.Security;
 using System.Security.Cryptography.X509Certificates;
 using System.Text.RegularExpressions;
-using BugtraqPlugin.DomainModel;
-using BugtraqPlugin.DomainModel.Parameter;
+using BugtraqPlugin.Contracts;
+using BugtraqPlugin.Contracts.DomainModel;
+using BugtraqPlugin.Contracts.DomainModel.Parameter;
+using Microsoft.Practices.Unity;
 
 namespace BugtraqPlugin.DataProvider
 {
    /// <summary>
-   /// Base class for DataProviders.
+   /// Base class for web bases DataProviders.
    /// </summary>
-   public abstract class DataProvider : IDisposable
+   public abstract class WebDataProvider : IDataProvider, IDisposable
    {
       #region Fields
 
@@ -57,7 +59,7 @@ namespace BugtraqPlugin.DataProvider
             if (issues == null)
             {
                issues = new IssueCollection();
-               LoadData();
+               Load();
             }
 
             return issues;
@@ -76,14 +78,15 @@ namespace BugtraqPlugin.DataProvider
       /// <summary>
       /// Initializes a new instance of the <see cref="DataProvider"/> class.
       /// </summary>
-      private DataProvider()
+      private WebDataProvider()
       { }
 
       /// <summary>
       /// Initializes a new instance of the <see cref="DataProvider"/> class.
       /// </summary>
       /// <param name="parameter">The parameter.</param>
-      protected DataProvider(PluginParameter parameter)
+      [InjectionConstructor]
+      protected WebDataProvider([Dependency]PluginParameter parameter)
          : this()
       {
          this.Parameter = parameter;
@@ -102,7 +105,7 @@ namespace BugtraqPlugin.DataProvider
       /// <summary>
       /// Loads the data.
       /// </summary>
-      public void LoadData()
+      public void Load()
       {
          bool isSecureConnection = DataRequestUri.Scheme == Uri.UriSchemeHttps;
 
@@ -156,8 +159,10 @@ namespace BugtraqPlugin.DataProvider
             }
             else
             {
+               // HACK: Fehler bei der trennung von Domain und Namen - ZU viele ) in der Regex?
                // search for domain user signs
-               Regex domainUser = new Regex("^(((?<domain>.*?)\\(?<user>.*?))|((?<user>.*?)@(<domain>.*?)))$", RegexOptions.Singleline | RegexOptions.IgnoreCase | RegexOptions.Compiled);
+               Regex domainUser = new Regex(@"^((?<domain>.+)\(?<user>.+))|((?<user>.+)@(?<domain>.+))$", 
+                  RegexOptions.Singleline | RegexOptions.IgnoreCase | RegexOptions.Compiled);
                Match match = domainUser.Match(Parameter.UserName);
                if (match.Success)
                {
@@ -181,7 +186,7 @@ namespace BugtraqPlugin.DataProvider
       /// Releases unmanaged resources and performs other cleanup operations before the
       /// <see cref="DataProvider"/> is reclaimed by garbage collection.
       /// </summary>
-      ~DataProvider()
+      ~WebDataProvider()
       {
          Dispose(false);
       }

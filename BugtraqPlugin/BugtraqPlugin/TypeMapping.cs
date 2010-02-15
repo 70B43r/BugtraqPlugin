@@ -1,8 +1,8 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
-// Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
-// Description        : Data container for issue data.
+// Project            : BugtraqPlugin
+// Module:            : Main Module
+// Description        : Description of mapped type
 // 
 // Repository         : $URL$
 // Last changed by    : $LastChangedBy$
@@ -17,38 +17,28 @@
 // Published under the MIT License. See license.txt or http://www.opensource.org/licenses/mit-license.php.
 //
 //////////////////////////////////////////////////////////////////////////////////
-
 using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 
-namespace BugtraqPlugin.DomainModel
+namespace BugtraqPlugin
 {
    /// <summary>
-   /// Issue data container.
+   /// Description of mapped types.
    /// </summary>
-   public class Issue
+   internal struct TypeMapping
    {
       /// <summary>
-      /// Gets the issue id.
+      /// The registration name.
       /// </summary>
-      public int Id { get; private set; }
+      public string Name { get; set; }
 
       /// <summary>
-      /// Gets the summary of the issue.
+      /// Type mapped from.
       /// </summary>
-      public string Summary { get; private set; }
+      public Type From { get; set; }
 
       /// <summary>
-      /// Initializes a new instance of the <see cref="Issue"/> class.
+      /// Type mapped to.
       /// </summary>
-      /// <param name="id">The id.</param>
-      /// <param name="summary">The summary.</param>
-      public Issue(int id, string summary)
-      {
-         this.Id = id;
-         this.Summary = summary;
-      }
+      public Type To { get; set; }
    }
 }

@@ -1,8 +1,8 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
-// Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
-// Description        : Collection of issues.
+// Project            : BugtraqPlugin
+// Module:            : BugtraqPluginContracts
+// Description        : Interface for DataProvider.
 // 
 // Repository         : $URL$
 // Last changed by    : $LastChangedBy$
@@ -18,32 +18,24 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-using System.Collections.Generic;
+using System;
+using BugtraqPlugin.Contracts.DomainModel;
 
-namespace BugtraqPlugin.DomainModel
+namespace BugtraqPlugin.Contracts
 {
    /// <summary>
-   /// Issue collection.
+   /// Interface for DataProvider.
    /// </summary>
-   public class IssueCollection : List<Issue>
+   public interface IDataProvider : IDisposable
    {
-      #region Constructors
+      /// <summary>
+      /// Gets the issues.
+      /// </summary>
+      IssueCollection Issues { get; }
 
       /// <summary>
-      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
+      /// Loads the data.
       /// </summary>
-      public IssueCollection()
-         : base()
-      { }
-
-      /// <summary>
-      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
-      /// </summary>
-      /// <param name="issues">The issues.</param>
-      public IssueCollection(IEnumerable<Issue> issues)
-         : base(issues)
-      { }
-
-      #endregion
+      void Load();
    }
 }

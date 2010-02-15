@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPlugin", "BugtraqPlu
 EndProject
 Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "BugtraqInstall", "BugtraqInstall\BugtraqInstall.vdproj", "{86CE4750-D3C4-42E0-A142-07E3244C1D27}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPluginContracts", "BugtraqPluginContracts\BugtraqPluginContracts.csproj", "{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPluginDataProvider", "BugtraqPluginDataProvider\BugtraqPluginDataProvider.csproj", "{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,6 +22,14 @@ Global
 		{86CE4750-D3C4-42E0-A142-07E3244C1D27}.Debug|Any CPU.ActiveCfg = Debug
 		{86CE4750-D3C4-42E0-A142-07E3244C1D27}.Release|Any CPU.ActiveCfg = Release
 		{86CE4750-D3C4-42E0-A142-07E3244C1D27}.Release|Any CPU.Build.0 = Release
+		{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

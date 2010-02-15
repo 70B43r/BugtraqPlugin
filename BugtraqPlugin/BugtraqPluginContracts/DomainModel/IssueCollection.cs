@@ -1,8 +1,8 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
 // Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
-// Description        : Data provider factory class.
+// Module:            : BugtraqPluginContracts
+// Description        : Collection of issues.
 // 
 // Repository         : $URL$
 // Last changed by    : $LastChangedBy$
@@ -18,37 +18,33 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
+using System.Collections.Generic;
+using System.ComponentModel;
+using System;
 
-using BugtraqPlugin.DomainModel.Parameter;
-
-namespace BugtraqPlugin.DataProvider
+namespace BugtraqPlugin.Contracts.DomainModel
 {
    /// <summary>
-   /// Data provider factory class.
+   /// Issue collection.
    /// </summary>
-   public abstract class DataProviderFactory
+   public class IssueCollection : List<Issue>
    {
       #region Constructors
 
       /// <summary>
-      /// Initializes a new instance of the <see cref="DataProviderFactory"/> class.
+      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
       /// </summary>
-      protected DataProviderFactory()
+      public IssueCollection()
+         : base()
       { }
 
-      #endregion
-
-      #region Methods
-
       /// <summary>
-      /// Gets a data provider.
+      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
       /// </summary>
-      /// <param name="parameter">The parameter.</param>
-      /// <returns></returns>
-      public static DataProvider GetProvider(PluginParameter parameter)
-      {
-         return new RedmineDataProvider(parameter);
-      }
+      /// <param name="issues">The issues.</param>
+      public IssueCollection(IEnumerable<Issue> issues)
+         : base(issues)
+      { }
 
       #endregion
    }

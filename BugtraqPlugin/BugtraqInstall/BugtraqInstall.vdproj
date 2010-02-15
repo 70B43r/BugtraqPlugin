@@ -15,32 +15,140 @@
     {
         "Entry"
         {
+        "MsmKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_0DDAC923D1604D219EABB280EAB4EB02"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_83A530AE78B0B8BC5F90F51D64569358"
-        "OwnerKey" = "8:_AAD7B48FEFA04AAD9192E743221ED7B6"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_AAD7B48FEFA04AAD9192E743221ED7B6"
+        "MsmKey" = "8:_11AC887463D14C0EBBDDD3640DBF0981"
         "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
+        "MsmKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "OwnerKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_83A530AE78B0B8BC5F90F51D64569358"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_85D9FBA0429157A0F6ADA97B6391E62C"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_8DC7486B6232401FBFC8628B73D52EA3"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
+        "OwnerKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
+        "OwnerKey" = "8:_D3C13F2652053358F68B8549B52094A9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D3C13F2652053358F68B8549B52094A9"
+        "OwnerKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D3C13F2652053358F68B8549B52094A9"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_D3C13F2652053358F68B8549B52094A9"
+        "OwnerKey" = "8:_85D9FBA0429157A0F6ADA97B6391E62C"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_AAD7B48FEFA04AAD9192E743221ED7B6"
+        "OwnerKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_85D9FBA0429157A0F6ADA97B6391E62C"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
         "OwnerKey" = "8:_83A530AE78B0B8BC5F90F51D64569358"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_11AC887463D14C0EBBDDD3640DBF0981"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_D3C13F2652053358F68B8549B52094A9"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -168,9 +276,40 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:BugtraqPluginContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_7CA47D52941E52A2DCA158EE8A5AA8A8"
+                    {
+                    "Name" = "8:BugtraqPluginContracts.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:BugtraqPluginContracts.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:TRUE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_83A530AE78B0B8BC5F90F51D64569358"
             {
-            "AssemblyRegister" = "3:2"
+            "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
             "AssemblyAsmDisplayName" = "8:Interop.BugTraqProvider, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
@@ -178,7 +317,7 @@
                     "_83A530AE78B0B8BC5F90F51D64569358"
                     {
                     "Name" = "8:Interop.BugTraqProvider.dll"
-                    "Attributes" = "3:576"
+                    "Attributes" = "3:512"
                     }
                 }
             "SourcePath" = "8:Interop.BugTraqProvider.dll"
@@ -186,7 +325,120 @@
             "Tag" = "8:"
             "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
             "Condition" = "8:"
-            "Transitive" = "11:TRUE"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_85D9FBA0429157A0F6ADA97B6391E62C"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Practices.Unity.Configuration, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_85D9FBA0429157A0F6ADA97B6391E62C"
+                    {
+                    "Name" = "8:Microsoft.Practices.Unity.Configuration.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Practices.Unity.Configuration.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_8DC7486B6232401FBFC8628B73D52EA3"
+            {
+            "SourcePath" = "8:..\\..\\Build\\Installer\\BugtraqPlugin.dll.config"
+            "TargetName" = "8:BugtraqPlugin.dll.config"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Practices.ObjectBuilder2, Version=2.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_A18ECEC72A6DC0D1CE7513B9E9A4FEFE"
+                    {
+                    "Name" = "8:Microsoft.Practices.ObjectBuilder2.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Practices.ObjectBuilder2.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D3C13F2652053358F68B8549B52094A9"
+            {
+            "AssemblyRegister" = "3:1"
+            "AssemblyIsInGAC" = "11:FALSE"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Practices.Unity, Version=1.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+                "ScatterAssemblies"
+                {
+                    "_D3C13F2652053358F68B8549B52094A9"
+                    {
+                    "Name" = "8:Microsoft.Practices.Unity.dll"
+                    "Attributes" = "3:512"
+                    }
+                }
+            "SourcePath" = "8:Microsoft.Practices.Unity.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
             "Vital" = "11:TRUE"
             "ReadOnly" = "11:FALSE"
             "Hidden" = "11:FALSE"
@@ -255,14 +507,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BugtraqPlugin"
-        "ProductCode" = "8:{E43EA1B9-4334-468A-A884-410698E20EB2}"
-        "PackageCode" = "8:{D47EDCB4-C014-4611-A55B-1A0B945A6FF8}"
+        "ProductCode" = "8:{B3727518-DE42-4F99-92AC-DA2A282A54B4}"
+        "PackageCode" = "8:{19C83320-22AD-4BAB-A260-F760DF169552}"
         "UpgradeCode" = "8:{47EF8971-A4C5-4FA7-8F64-0507CD0F5144}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.0.0"
+        "ProductVersion" = "8:1.1.0"
         "Manufacturer" = "8:Torsten Bär"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://code.google.com/p/bugtraqplugin/"
@@ -368,8 +620,8 @@
                             {
                             "Name" = "8:{3F568A2A-3AAC-4B0D-B187-F1240F931152}"
                             "Condition" = "8:"
-                            "AlwaysCreate" = "11:FALSE"
-                            "DeleteAtUninstall" = "11:FALSE"
+                            "AlwaysCreate" = "11:TRUE"
+                            "DeleteAtUninstall" = "11:TRUE"
                             "Transitive" = "11:FALSE"
                                 "Keys"
                                 {
@@ -378,7 +630,7 @@
                                     "Name" = "8:Implemented Categories"
                                     "Condition" = "8:"
                                     "AlwaysCreate" = "11:FALSE"
-                                    "DeleteAtUninstall" = "11:FALSE"
+                                    "DeleteAtUninstall" = "11:TRUE"
                                     "Transitive" = "11:FALSE"
                                         "Keys"
                                         {
@@ -830,9 +1082,9 @@
         }
         "ProjectOutput"
         {
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AAD7B48FEFA04AAD9192E743221ED7B6"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_054009B9F5F0484ABD6925658DFB4542"
             {
-            "SourcePath" = "8:..\\BugtraqPlugin\\obj\\Release\\BugtraqPlugin.dll"
+            "SourcePath" = "8:..\\BugtraqPluginDataProvider\\obj\\Release\\BugtraqPluginDataProvider.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
@@ -849,16 +1101,44 @@
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
-            "ProjectOutputGroupRegister" = "3:2"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:Built"
-            "OutputProjectGuid" = "8:{83645E21-E943-48F8-81E7-FE6FC590DB74}"
+            "OutputProjectGuid" = "8:{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"
                 {
                 }
             }
-            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_AE0CFA131F784EF899F11DE9A5999AA9"
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_11AC887463D14C0EBBDDD3640DBF0981"
+            {
+            "SourcePath" = "8:..\\BugtraqPluginContracts\\obj\\Release\\BugtraqPluginContracts.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
+            "OutputProjectGuid" = "8:{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_3CE5C566920844DE80DE4A99156B7BFF"
             {
             "SourcePath" = "8:"
             "TargetName" = "8:"
@@ -878,8 +1158,92 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             "ProjectOutputGroupRegister" = "3:1"
-            "OutputConfiguration" = "8:Release|Any CPU"
+            "OutputConfiguration" = "8:"
             "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_4A0645085D204D2E9242EDCBD49517CA"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{7EBF2A71-4FAA-4826-8322-D4A2904BD5A4}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_777A4CCA5F1B478FA16185A5F54E1DBE"
+            {
+            "SourcePath" = "8:"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:1"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:LocalizedResourceDlls"
+            "OutputProjectGuid" = "8:{83645E21-E943-48F8-81E7-FE6FC590DB74}"
+            "ShowKeyOutput" = "11:TRUE"
+                "ExcludeFilters"
+                {
+                }
+            }
+            "{5259A561-127C-4D43-A0A1-72F10C7B3BF8}:_BA3342125C804F87A7FB968B5AB2292B"
+            {
+            "SourcePath" = "8:..\\BugtraqPlugin\\obj\\Release\\BugtraqPlugin.dll"
+            "TargetName" = "8:"
+            "Tag" = "8:"
+            "Folder" = "8:_48B38F668821419595BC52C53F3C5C75"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            "ProjectOutputGroupRegister" = "3:2"
+            "OutputConfiguration" = "8:"
+            "OutputGroupCanonicalName" = "8:Built"
             "OutputProjectGuid" = "8:{83645E21-E943-48F8-81E7-FE6FC590DB74}"
             "ShowKeyOutput" = "11:TRUE"
                 "ExcludeFilters"

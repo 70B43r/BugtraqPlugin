@@ -19,18 +19,28 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 using System;
+using System.Collections.Generic;
 using System.ComponentModel;
-using BugtraqPlugin.DomainModel.Parameter;
+using System.Configuration;
+using System.Linq;
 using System.Windows.Forms;
+using BugtraqPlugin.Contracts;
+using BugtraqPlugin.Contracts.DomainModel.Parameter;
+using Microsoft.Practices.Unity.Configuration;
 
 namespace BugtraqPlugin.Forms
 {
    /// <summary>
    /// Options form.
    /// </summary>
-   public partial class OptionsForm : PluginFormBase
+   public partial class OptionsForm : Form
    {
       #region Properties
+
+      /// <summary>
+      /// Gets the current parameters.
+      /// </summary>
+      public PluginParameter Parameter { get; private set; }
 
       #endregion
 
@@ -40,10 +50,13 @@ namespace BugtraqPlugin.Forms
       /// Initializes a new instance of the <see cref="OptionsForm"/> class.
       /// </summary>
       /// <param name="parameter">The parameter.</param>
-      public OptionsForm(PluginParameter parameter)
-         : base(parameter)
+      /// <param name="dataProviderNames">The data provider names.</param>
+      public OptionsForm(PluginParameter parameter, IEnumerable<string> dataProviderNames)
+         : base()
       {
          InitializeComponent();
+
+         this.Parameter = parameter;
 
          if (parameter.BugtrackUri != null)
             this.textBoxProjectUri.Text = parameter.BugtrackUri.AbsoluteUri;
@@ -61,6 +74,11 @@ namespace BugtraqPlugin.Forms
 
          if (!radioButtonSupplied.Checked && !radioButtonCurrentUser.Checked)
             radioButtonNoCredentials.Checked = true;
+
+         foreach (string dataProviderName in dataProviderNames)
+         {
+            comboBoxDataProvider.Items.Add(dataProviderName);
+         }
       }
 
       #endregion
@@ -73,69 +91,83 @@ namespace BugtraqPlugin.Forms
       /// <param name="e">A <see cref="T:System.ComponentModel.CancelEventArgs"/> that contains the event data.</param>
       protected override void OnClosing(CancelEventArgs e)
       {
-         Uri uri = null;
-         if (!String.IsNullOrEmpty(textBoxProjectUri.Text))
+         if (this.DialogResult != DialogResult.Cancel)
          {
-            if (Uri.TryCreate(textBoxProjectUri.Text, UriKind.Absolute, out uri))
+            Uri uri = null;
+            if (!String.IsNullOrEmpty(textBoxProjectUri.Text))
             {
-               if (!uri.IsWellFormedOriginalString())
+               if (Uri.TryCreate(textBoxProjectUri.Text, UriKind.Absolute, out uri))
                {
-                  textBoxProjectUri.Text = Uri.EscapeUriString(textBoxProjectUri.Text);
-                  uri = new Uri(textBoxProjectUri.Text);
+                  if (!uri.IsWellFormedOriginalString())
+                  {
+                     textBoxProjectUri.Text = Uri.EscapeUriString(textBoxProjectUri.Text);
+                     uri = new Uri(textBoxProjectUri.Text);
+                  }
+                  errorProvider.SetError(textBoxProjectUri, null);
                }
-               errorProvider.SetError(textBoxProjectUri, null);
+               else
+               {
+                  errorProvider.SetError(textBoxProjectUri, "Uri is not valid.");
+               }
             }
             else
             {
-               errorProvider.SetError(textBoxProjectUri, "Uri is not valid.");
+               errorProvider.SetError(textBoxProjectUri, "Please enter project url.");
             }
-         }
-         else
-         {
-            errorProvider.SetError(textBoxProjectUri, "Please enter project url.");
-         }
 
-         e.Cancel = uri == null;
+            e.Cancel = uri == null;
 
-         if (!e.Cancel)
-         {
-            if (radioButtonSupplied.Checked && String.IsNullOrEmpty(textBoxUser.Text))
+            if (!e.Cancel)
             {
-               e.Cancel = true;
-               errorProvider.SetError(textBoxUser, "Username missing");
-            }
-            else
-            {
-               errorProvider.SetError(textBoxUser, null);
-
-               if (Parameter.BugtrackUri == null || uri.AbsoluteUri.ToLower() != Parameter.BugtrackUri.AbsoluteUri)
-                  Parameter.BugtrackUri = uri;
-
-               if (radioButtonNoCredentials.Checked)
+               if (radioButtonSupplied.Checked && String.IsNullOrEmpty(textBoxUser.Text))
                {
-                  Parameter.UseCurrentUser = null;
-                  Parameter.UserName = null;
-                  Parameter.Password = null;
+                  e.Cancel = true;
+                  errorProvider.SetError(textBoxUser, "Username missing");
                }
-               else if (radioButtonCurrentUser.Checked)
+               else
                {
-                  Parameter.UseCurrentUser = true;
-                  Parameter.UserName = null;
-                  Parameter.Password = null;
+                  errorProvider.SetError(textBoxUser, null);
+
+                  if (Parameter.BugtrackUri == null || uri.AbsoluteUri.ToLower() != Parameter.BugtrackUri.AbsoluteUri)
+                     Parameter.BugtrackUri = uri;
+
+                  if (radioButtonNoCredentials.Checked)
+                  {
+                     Parameter.UseCurrentUser = null;
+                     Parameter.UserName = null;
+                     Parameter.Password = null;
+                  }
+                  else if (radioButtonCurrentUser.Checked)
+                  {
+                     Parameter.UseCurrentUser = true;
+                     Parameter.UserName = null;
+                     Parameter.Password = null;
+                  }
+                  else if (radioButtonSupplied.Checked)
+                  {
+                     Parameter.UseCurrentUser = false;
+                     Parameter.UserName = textBoxUser.Text;
+                     Parameter.Password = textBoxPass.Text;
+                  }
                }
-               else if (radioButtonSupplied.Checked)
+
+               if (comboBoxDataProvider.SelectedIndex > -1)
                {
-                  Parameter.UseCurrentUser = false;
-                  Parameter.UserName = textBoxUser.Text;
-                  Parameter.Password = textBoxPass.Text;
+                  errorProvider.SetError(comboBoxDataProvider, null);
+
+                  this.Parameter.DataProvider = comboBoxDataProvider.Items[comboBoxDataProvider.SelectedIndex].ToString();
+               }
+               else
+               {
+                  errorProvider.SetError(comboBoxDataProvider, "Dataprovider missing");
+                  e.Cancel = true;
                }
             }
          }
-
-      #endregion
-
          base.OnClosing(e);
       }
+
+      #endregion
 
       #region Eventhandler
 

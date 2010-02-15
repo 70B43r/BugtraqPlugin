@@ -24,15 +24,16 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.Linq;
 using System.Windows.Forms;
-using BugtraqPlugin.DomainModel;
-using BugtraqPlugin.DomainModel.Parameter;
+using BugtraqPlugin.Contracts.DomainModel;
+using BugtraqPlugin.Contracts.DomainModel.Parameter;
+using BugtraqPlugin.Contracts;
 
 namespace BugtraqPlugin.Forms
 {
    /// <summary>
    /// Main form of the Plugin.
    /// </summary>
-   public partial class MainForm : PluginFormBase
+   public partial class MainForm : Form
    {
       #region Properties
 
@@ -40,7 +41,7 @@ namespace BugtraqPlugin.Forms
       /// Gets or sets the data provider.
       /// </summary>
       /// <value>The data provider.</value>
-      public DataProvider.DataProvider DataProvider { get; private set; }
+      public IDataProvider DataProvider { get; private set; }
 
       /// <summary>
       /// Gets the selected issues.
@@ -66,10 +67,9 @@ namespace BugtraqPlugin.Forms
       /// <summary>
       /// Initializes a new instance of the <see cref="MainForm"/> class.
       /// </summary>
-      /// <param name="parameter">The parameter.</param>
       /// <param name="dataProvider">The data provider.</param>
-      public MainForm(PluginParameter parameter, DataProvider.DataProvider dataProvider)
-         : base(parameter)
+      public MainForm(IDataProvider dataProvider)
+         : base()
       {
          InitializeComponent();
 

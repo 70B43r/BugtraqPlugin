@@ -1,3 +1,4 @@
+@echo off
 rem
 rem Project            : Tortoise Bugtraq Plugin
 rem Module:            : BugtraqPlugin
@@ -16,13 +17,12 @@ rem
 rem Published under the MIT License. See license.txt or http:remwww.opensource.org/licenses/mit-license.php.
 rem
 
-@echo off
 setlocal
 
-if exist Build/Debug/BugtraqPlugin.dll (
+if exist ../Build/Debug/BugtraqPlugin.dll (
 echo generating regfile for debug build
 
-regasm Build/Debug/BugtraqPlugin.dll /codebase /regfile:BugtraqPlugin_Debug.reg /silent
+regasm ../Build/Debug/BugtraqPlugin.dll /codebase /regfile:BugtraqPlugin_Debug.reg /silent
 
 echo. >> BugtraqPlugin_Debug.reg
 echo [HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\Implemented Categories\{3494FA92-B139-4730-9591-01135D5E7831}] >> BugtraqPlugin_Debug.reg
@@ -32,10 +32,10 @@ echo regfile for debug build is BugtraqPlugin_Debug.reg
 echo debug build not found
 )
 
-if exist Build/Release/BugtraqPlugin.dll (
+if exist ../Build/Release/BugtraqPlugin.dll (
 echo generating regfile for release build
 
-regasm Build/Release/BugtraqPlugin.dll /codebase /regfile:BugtraqPlugin_Release.reg /silent
+regasm ../Build/Release/BugtraqPlugin.dll /codebase /regfile:BugtraqPlugin_Release.reg /silent
 
 echo. >> BugtraqPlugin_Release.reg
 echo [HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\Implemented Categories\{3494FA92-B139-4730-9591-01135D5E7831}] >> BugtraqPlugin_Release.reg

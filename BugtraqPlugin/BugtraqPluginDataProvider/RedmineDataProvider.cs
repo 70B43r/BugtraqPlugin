@@ -1,7 +1,7 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
 // Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
+// Module:            : BugtraqPluginDataProvider
 // Description        : Data provider for Redmine Bugtraq system.
 // 
 // Repository         : $URL$
@@ -18,20 +18,20 @@
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-
 using System;
 using System.IO;
 using System.Text;
 using System.Text.RegularExpressions;
-using BugtraqPlugin.DomainModel;
-using BugtraqPlugin.DomainModel.Parameter;
+using BugtraqPlugin.Contracts.DomainModel;
+using BugtraqPlugin.Contracts.DomainModel.Parameter;
+using Microsoft.Practices.Unity;
 
 namespace BugtraqPlugin.DataProvider
 {
    /// <summary>
    /// Data provider for Redmine bugtrack system.
    /// </summary>
-   internal class RedmineDataProvider : DataProvider
+   internal class RedmineDataProvider : WebDataProvider
    {
       #region Constants
 
@@ -74,10 +74,10 @@ namespace BugtraqPlugin.DataProvider
       /// Initializes a new instance of the <see cref="RedmineDataProvider"/> class.
       /// </summary>
       /// <param name="parameter">The parameter.</param>
-      public RedmineDataProvider(PluginParameter parameter)
+      [InjectionConstructor]
+      public RedmineDataProvider([Dependency]PluginParameter parameter)
          : base(parameter)
       { }
-
 
       #endregion
 

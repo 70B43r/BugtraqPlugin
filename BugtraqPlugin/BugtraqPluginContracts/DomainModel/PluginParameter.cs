@@ -1,7 +1,7 @@
 ﻿//////////////////////////////////////////////////////////////////////////////////
 //
 // Project            : Tortoise Bugtraq Plugin
-// Module:            : BugtraqPlugin
+// Module:            : BugtraqPluginContracts
 // Description        : Helper for parameter handling.
 // 
 // Repository         : $URL$
@@ -21,7 +21,7 @@
 
 using System;
 
-namespace BugtraqPlugin.DomainModel.Parameter
+namespace BugtraqPlugin.Contracts.DomainModel.Parameter
 {
    /// <summary>
    /// Class for parameter handling.
@@ -34,12 +34,13 @@ namespace BugtraqPlugin.DomainModel.Parameter
       private const string PARAMETER_USECURRENTUSER = "USECURRENTUSER";
       private const string PARAMETER_USERNAME = "USER";
       private const string PARAMETER_PASSWORD = "PASS";
+      private const string PARAMETER_DATAPROVIDER = "DATAPROVIDER";
 
       #endregion
 
       #region static fields
 
-      private static string[] requiredParameter = new string[] { PARAMETER_URI };
+      private static string[] requiredParameter = new string[] { PARAMETER_DATAPROVIDER, PARAMETER_URI };
 
       #endregion
 
@@ -65,6 +66,27 @@ namespace BugtraqPlugin.DomainModel.Parameter
                parametersValid = Validate();
 
             return parametersValid.Value;
+         }
+      }
+
+      /// <summary>
+      /// Gets or sets the data provider.
+      /// </summary>
+      /// <value>The data provider.</value>
+      public string DataProvider
+      {
+         get
+         {
+            if (parameterBuilder.HasParameter(PARAMETER_DATAPROVIDER))
+               return parameterBuilder.GetParameter(PARAMETER_DATAPROVIDER);
+            return null;
+         }
+         set
+         {
+            if (value == null)
+               parameterBuilder.RemoveParameter(PARAMETER_DATAPROVIDER);
+            else
+               parameterBuilder.SetParameter(PARAMETER_DATAPROVIDER, value);
          }
       }
 
@@ -178,7 +200,7 @@ namespace BugtraqPlugin.DomainModel.Parameter
       /// </summary>
       /// <param name="parameters">The parameter string.</param>
       /// <returns><code>true</code> if parameters are valid, otherwise <code>false</code>.</returns>
-      internal static bool Validate(string parameters)
+      public static bool Validate(string parameters)
       {
          return new PluginParameter(parameters).Validate();
       }
