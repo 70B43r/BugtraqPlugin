@@ -72,12 +72,14 @@ namespace BugtraqPlugin.Forms
          if (parameter.UseCurrentUser.HasValue)
             radioButtonCurrentUser.Checked = parameter.UseCurrentUser.Value;
 
-         if (!radioButtonSupplied.Checked && !radioButtonCurrentUser.Checked)
+         if (String.IsNullOrEmpty(parameter.UserName) & String.IsNullOrEmpty(parameter.UserName) && !parameter.UseCurrentUser.HasValue)
             radioButtonNoCredentials.Checked = true;
 
          foreach (string dataProviderName in dataProviderNames)
          {
-            comboBoxDataProvider.Items.Add(dataProviderName);
+            int idx = comboBoxDataProvider.Items.Add(dataProviderName);
+            if (StringComparer.InvariantCultureIgnoreCase.Compare(dataProviderName, parameter.DataProvider) == 0)
+               comboBoxDataProvider.SelectedIndex = idx;
          }
       }
 

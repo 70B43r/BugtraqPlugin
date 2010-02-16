@@ -1,7 +1,31 @@
 REGEDIT4
 
+[HKEY_CLASSES_ROOT\BugtraqPlugin.Plugin]
+@="BugtraqPlugin.Plugin"
+
+[HKEY_CLASSES_ROOT\BugtraqPlugin.Plugin\CLSID]
+@="{3F568A2A-3AAC-4B0D-B187-F1240F931152}"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}]
+@="BugtraqPlugin.Plugin"
+
 [HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\InprocServer32]
+@="mscoree.dll"
+"ThreadingModel"="Both"
+"Class"="BugtraqPlugin.Plugin"
+"Assembly"="BugtraqPlugin, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v2.0.50727"
 "CodeBase"="file:///D:/Entwicklung/bugtraqplugin/Build/Debug/BugtraqPlugin.dll"
 
 [HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\InprocServer32\1.1.0.0]
+"Class"="BugtraqPlugin.Plugin"
+"Assembly"="BugtraqPlugin, Version=1.1.0.0, Culture=neutral, PublicKeyToken=null"
+"RuntimeVersion"="v2.0.50727"
 "CodeBase"="file:///D:/Entwicklung/bugtraqplugin/Build/Debug/BugtraqPlugin.dll"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\ProgId]
+@="BugtraqPlugin.Plugin"
+
+[HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\Implemented Categories\{62C8FE65-4EBB-45E7-B440-6E39B2CDBF29}]
+ 
+[HKEY_CLASSES_ROOT\CLSID\{3F568A2A-3AAC-4B0D-B187-F1240F931152}\Implemented Categories\{3494FA92-B139-4730-9591-01135D5E7831}] 
