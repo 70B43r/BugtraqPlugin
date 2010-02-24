@@ -105,7 +105,7 @@
          this.groupBoxBugtraqSystem.Size = new System.Drawing.Size(532, 53);
          this.groupBoxBugtraqSystem.TabIndex = 6;
          this.groupBoxBugtraqSystem.TabStop = false;
-         this.groupBoxBugtraqSystem.Text = "Bucgtrack-System";
+         this.groupBoxBugtraqSystem.Text = "Bugtrack System";
          // 
          // labelURL
          // 
