@@ -33,13 +33,13 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "MsmKey" = "8:_37B47E6D05611F12F3296A726EF45459"
         "OwnerKey" = "8:_054009B9F5F0484ABD6925658DFB4542"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "MsmKey" = "8:_37B47E6D05611F12F3296A726EF45459"
         "OwnerKey" = "8:_BA3342125C804F87A7FB968B5AB2292B"
         "MsmSig" = "8:_UNDEFINED"
         }
@@ -112,7 +112,7 @@
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+        "OwnerKey" = "8:_37B47E6D05611F12F3296A726EF45459"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -276,14 +276,14 @@
             "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_7CA47D52941E52A2DCA158EE8A5AA8A8"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_37B47E6D05611F12F3296A726EF45459"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:BugtraqPluginContracts, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:BugtraqPluginContracts, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_7CA47D52941E52A2DCA158EE8A5AA8A8"
+                    "_37B47E6D05611F12F3296A726EF45459"
                     {
                     "Name" = "8:BugtraqPluginContracts.dll"
                     "Attributes" = "3:512"
@@ -507,14 +507,14 @@
         {
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:BugtraqPlugin"
-        "ProductCode" = "8:{B3727518-DE42-4F99-92AC-DA2A282A54B4}"
-        "PackageCode" = "8:{19C83320-22AD-4BAB-A260-F760DF169552}"
+        "ProductCode" = "8:{F0845D44-D7DA-454C-AAD7-815E9C2BF384}"
+        "PackageCode" = "8:{032C1B5A-7D7B-4EA9-808B-9ED9C19A6B9C}"
         "UpgradeCode" = "8:{47EF8971-A4C5-4FA7-8F64-0507CD0F5144}"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:TRUE"
         "DetectNewerInstalledVersion" = "11:TRUE"
         "InstallAllUsers" = "11:TRUE"
-        "ProductVersion" = "8:1.1.0"
+        "ProductVersion" = "8:1.1.1"
         "Manufacturer" = "8:Torsten Bär"
         "ARPHELPTELEPHONE" = "8:"
         "ARPHELPLINK" = "8:http://code.google.com/p/bugtraqplugin/"

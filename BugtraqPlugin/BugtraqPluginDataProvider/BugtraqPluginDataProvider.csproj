@@ -42,6 +42,7 @@
     <Reference Include="System.Core">
       <RequiredTargetFramework>3.5</RequiredTargetFramework>
     </Reference>
+    <Reference Include="System.XML" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="..\Shared\GlobalAssemblyInfo.cs">
@@ -54,7 +55,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="..\..\Images\TortoiseBugtraqPlugin.ico">
-      <Link>TortoiseBugtraqPlugin.ico</Link>
+      <Link>Properties\TortoiseBugtraqPlugin.ico</Link>
     </Content>
   </ItemGroup>
   <ItemGroup>

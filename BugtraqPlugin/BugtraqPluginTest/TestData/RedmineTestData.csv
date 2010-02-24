@@ -1,0 +1,22 @@
+#;Status;Projekt;Tracker;Priorität;Thema;Zugewiesen an;Kategorie;Zielversion;Autor;Beginn;Abgabedatum;% erledigt;Geschätzter Aufwand;Angelegt;Aktualisiert;Affected version;Resolution;Beschreibung
+4919;New;Redmine;Defect;Normal;Changelog parses brackets wrong;"";Issues;"";h1d h1d;2010-02-24;"";0;"";2010-02-24 08:48;2010-02-24 08:51;0.8.7;"";"When I commit a change to a repository (I had it as svn) with a bracket in the commit message, (ie : [base] changed this, changed that) and view the log via redmine, the log ends up similar to ""/> changed this, changed that"" instead of showing it as is."
+4918;New;Redmine;Defect;Normal;Revisions r3453 and r3454 broke On-the-fly user creation with LDAP;"";LDAP;"";Jack Kurzecki;2010-02-23;"";0;"";2010-02-23 22:29;2010-02-23 23:39;devel;"";"Revisions r3453 and r3454 broke On-the-fly user creation with LDAP
+
+When attempting to enter a valid username and password for a user existing in AD, but not in Redmine I'm getting the following error (production.log):
+<pre>
+Processing AccountController#login (for 192.168.0.100 at 2010-02-23 13:00:27) [POST]
+  Parameters: {""back_url""=>""http%3A%2F%2Flocalhost"", ""action""=>""login"", ""authenticity_token""=>""cBCdZZoPF6hXV2QeqgVcd/BKAkYH9laBDjRKdSSSA10="", ""username""=>""user1"", ""controller""=>""account"", ""password""=>""[FILTERED]"", ""login""=>""Login »""}
+
+ActiveRecord::UnknownAttributeError (unknown attribute: dn):
+  app/models/user.rb:114:in `new'
+  app/models/user.rb:114:in `try_to_login'
+  app/controllers/account_controller.rb:140:in `password_authentication'
+  app/controllers/account_controller.rb:35:in `login'
+
+Rendering C:/webserver/railsapps/redmine/public/500.html (500 Internal Server Error)
+
+</pre>
+
+Reverting only *app\models\auth_source_ldap.rb* to r3452 fixes the issue and user gets created in Redmine.
+"
+4913;New;Redmine;Feature;Normal;Projects list expanding and contracting;"";UI;"";Bruno Prado;2010-02-23;"";0;"";2010-02-23 14:58;2010-02-23 14:58;"";"";The same way a javascript expands and contracts the folders in the Repository view, I suggest the same feature to be implemented to the Projects list.

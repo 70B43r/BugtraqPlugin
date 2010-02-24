@@ -47,6 +47,7 @@
     <Compile Include="DomainModel\IssueCollection.cs" />
     <Compile Include="DomainModel\ParameterBuilder.cs" />
     <Compile Include="DomainModel\PluginParameter.cs" />
+    <Compile Include="DomainModel\ReadOnlyIssueCollection.cs" />
     <Compile Include="IDataProvider.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

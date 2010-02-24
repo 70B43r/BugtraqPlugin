@@ -25,6 +25,7 @@ using System.Text.RegularExpressions;
 using BugtraqPlugin.Contracts.DomainModel;
 using BugtraqPlugin.Contracts.DomainModel.Parameter;
 using Microsoft.Practices.Unity;
+using System.Collections.Generic;
 
 namespace BugtraqPlugin.DataProvider
 {
@@ -51,7 +52,7 @@ namespace BugtraqPlugin.DataProvider
       /// <summary>
       /// Gets the data request URI.
       /// </summary>
-      protected override Uri DataRequestUri
+      public override Uri DataRequestUri
       {
          get
          {
@@ -79,6 +80,21 @@ namespace BugtraqPlugin.DataProvider
          : base(parameter)
       { }
 
+#if DEBUG
+
+      /// <summary>
+      /// Initializes a new instance of the <see cref="RedmineDataProvider"/> class.
+      /// </summary>
+      /// <param name="parameter">The parameter.</param>
+      /// <param name="dataRequestUri">The data request URI.</param>
+      internal RedmineDataProvider(PluginParameter parameter, Uri dataRequestUri)
+         : this(parameter)
+      {
+         this.dataRequestUri = dataRequestUri;
+      }
+
+#endif
+
       #endregion
 
       #region Methods
@@ -87,7 +103,7 @@ namespace BugtraqPlugin.DataProvider
       /// Handles loaded data.
       /// </summary>
       /// <param name="data">The data.</param>
-      protected override void HandleData(string data)
+      protected override IEnumerable<Issue> HandleData(string data)
       {
          using (StringReader reader = new StringReader(data))
          {
@@ -98,7 +114,7 @@ namespace BugtraqPlugin.DataProvider
                // new issue?
                if (Regex.IsMatch(line, @"^\d+;", RegexOptions.Singleline) && dataCache.Length > 0)
                {
-                  HandleTicketData(dataCache.ToString());
+                  yield return HandleTicketData(dataCache.ToString());
                   dataCache.Length = 0;
                }
 
@@ -106,7 +122,7 @@ namespace BugtraqPlugin.DataProvider
             }
 
             // process last issue
-            HandleTicketData(dataCache.ToString());
+            yield return HandleTicketData(dataCache.ToString());
          }
       }
 
@@ -114,7 +130,7 @@ namespace BugtraqPlugin.DataProvider
       /// Handles the ticket data.
       /// </summary>
       /// <param name="data">The data.</param>
-      private void HandleTicketData(string data)
+      private Issue HandleTicketData(string data)
       {
          if (!String.IsNullOrEmpty(data))
          {
@@ -125,9 +141,10 @@ namespace BugtraqPlugin.DataProvider
 
                int id = int.Parse(lineData[0]);
 
-               this.Issues.Add(new Issue(id, lineData[5]));
+               return new Issue(id, lineData[5]);
             }
          }
+         return null;
       }
 
       #endregion

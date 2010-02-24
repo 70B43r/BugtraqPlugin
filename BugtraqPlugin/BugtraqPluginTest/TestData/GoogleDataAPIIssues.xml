@@ -1,0 +1,98 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'
+      xmlns:openSearch='http://a9.com/-/spec/opensearch/1.1/'
+      xmlns:gd='http://schemas.google.com/g/2005' 
+      xmlns:issues='http://schemas.google.com/projecthosting/issues/2009'>
+   <id>http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full</id>
+   <updated>2010-02-19T21:51:30.774Z</updated>
+   <title>Issues - bugtraqplugin</title>
+   <subtitle>Issues - bugtraqplugin</subtitle>
+   <link rel='alternate' type='text/html' href='http://code.google.com/p/bugtraqplugin/issues/list'/>
+   <link rel='http://schemas.google.com/g/2005#feed' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full'/>
+   <link rel='http://schemas.google.com/g/2005#post' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full'/>
+   <link rel='self' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full'/>
+   <generator version='1.0' uri='http://code.google.com/feeds/issues'>ProjectHosting</generator>
+   <openSearch:totalResults>3</openSearch:totalResults>
+   <openSearch:startIndex>1</openSearch:startIndex>
+   <entry gd:etag='W/&quot;CU8GQH47eCl7ImA9WxBVEko.&quot;'>
+      <id>http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/1</id>
+      <published>2010-02-13T19:46:59.000Z</published>
+      <updated>2010-02-15T22:43:41.000Z</updated>
+      <title>Usage of Microkernel/DI-Container</title>
+      <content type='html'>Use Microkernel or DI-Container to support 3rd DataProviders.</content>
+      <link rel='replies' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/1/comments/full'/>
+      <link rel='alternate' type='text/html' href='http://code.google.com/p/bugtraqplugin/issues/detail?id=1'/>
+      <link rel='self' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/1'/>
+      <author>
+         <name>torsten.baer</name>
+         <uri>/u/torsten.baer/</uri>
+      </author>
+      <issues:closedDate>2010-02-15T22:43:41.000Z</issues:closedDate>
+      <issues:id>1</issues:id>
+      <issues:label>Type-Enhancement</issues:label>
+      <issues:label>OpSys-All</issues:label>
+      <issues:label>Priority-High</issues:label>
+      <issues:label>Usability</issues:label>
+      <issues:owner>
+         <issues:uri>/u/torsten.baer/</issues:uri>
+         <issues:username>torsten.baer</issues:username>
+      </issues:owner>
+      <issues:stars>1</issues:stars>
+      <issues:state>closed</issues:state>
+      <issues:status>Fixed</issues:status>
+   </entry>
+   <entry gd:etag='W/&quot;CU8GQ347eCl7ImA9WxBVEko.&quot;'>
+      <id>http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/2</id>
+      <published>2010-02-13T19:48:08.000Z</published>
+      <updated>2010-02-15T22:43:42.000Z</updated>
+      <title>Support for Google Code</title>
+      <content type='html'>Implement support for Google Code bugtracking system.</content>
+      <link rel='replies' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/2/comments/full'/>
+      <link rel='alternate' type='text/html' href='http://code.google.com/p/bugtraqplugin/issues/detail?id=2'/>
+      <link rel='self' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/2'/>
+      <author>
+         <name>torsten.baer</name>
+         <uri>/u/torsten.baer/</uri>
+      </author>
+      <issues:closedDate>2010-02-15T22:43:42.000Z</issues:closedDate>
+      <issues:id>2</issues:id>
+      <issues:label>Type-Enhancement</issues:label>
+      <issues:label>Priority-Medium</issues:label>
+      <issues:label>OpSys-All</issues:label>
+      <issues:label>Usability</issues:label>
+      <issues:owner>
+         <issues:uri>/u/torsten.baer/</issues:uri>
+         <issues:username>torsten.baer</issues:username>
+      </issues:owner>
+      <issues:stars>1</issues:stars>
+      <issues:state>closed</issues:state>
+      <issues:status>Fixed</issues:status>
+   </entry>
+   <entry gd:etag='W/&quot;CkAAR347eCl7ImA9WxBVEEQ.&quot;'>
+      <id>http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/3</id>
+      <published>2010-02-13T19:52:26.000Z</published>
+      <updated>2010-02-13T19:52:26.000Z</updated>
+      <title>Language Support</title>
+      <content type='html'>Support multiple languages</content>
+      <link rel='replies' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/3/comments/full'/>
+      <link rel='alternate' type='text/html' href='http://code.google.com/p/bugtraqplugin/issues/detail?id=3'/>
+      <link rel='self' type='application/atom+xml' href='http://code.google.com/feeds/issues/p/bugtraqplugin/issues/full/3'/>
+      <author>
+         <name>torsten.baer</name>
+         <uri>/u/torsten.baer/</uri>
+      </author>
+      <issues:id>3</issues:id>
+      <issues:label>Type-Enhancement</issues:label>
+      <issues:label>OpSys-All</issues:label>
+      <issues:label>Usability</issues:label>
+      <issues:label>Component-UI</issues:label>
+      <issues:label>Priority-Low</issues:label>
+      <issues:owner>
+         <issues:uri>/u/torsten.baer/</issues:uri>
+         <issues:username>torsten.baer</issues:username>
+      </issues:owner>
+      <issues:stars>1</issues:stars>
+      <issues:state>open</issues:state>
+      <issues:status>New</issues:status>
+   </entry>
+</feed>

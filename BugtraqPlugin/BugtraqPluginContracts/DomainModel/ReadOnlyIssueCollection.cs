@@ -1,8 +1,8 @@
-﻿//////////////////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////////////
 //
-// Project            : Tortoise Bugtraq Plugin
+// Project            : BugtraqPlugin
 // Module:            : BugtraqPluginContracts
-// Description        : Collection of issues.
+// Description        : Readonly Issue Collection.
 // 
 // Repository         : $URL$
 // Last changed by    : $LastChangedBy$
@@ -12,38 +12,28 @@
 //
 // Id:                : $Id$
 //
-// Copyright:         (c) 2010 Torsten Bär
+// Copyright:         (c) 2010 Torsten B�r
 //
 // Published under the MIT License. See license.txt or http://www.opensource.org/licenses/mit-license.php.
 //
 //////////////////////////////////////////////////////////////////////////////////
 
-using System.Collections.Generic;
-using System.ComponentModel;
-using System;
 using System.Collections.ObjectModel;
 
 namespace BugtraqPlugin.Contracts.DomainModel
 {
    /// <summary>
-   /// Issue collection.
+   /// Readonly Issue Collection.
    /// </summary>
-   public class IssueCollection : List<Issue>
+   public class ReadOnlyIssueCollection : ReadOnlyCollection<Issue>
    {
       #region Constructors
 
       /// <summary>
-      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
-      /// </summary>
-      public IssueCollection()
-         : base()
-      { }
-
-      /// <summary>
-      /// Initializes a new instance of the <see cref="IssueCollection"/> class.
+      /// Initializes a new instance of the <see cref="ReadOnlyIssueCollection"/> class.
       /// </summary>
       /// <param name="issues">The issues.</param>
-      public IssueCollection(IEnumerable<Issue> issues)
+      public ReadOnlyIssueCollection(IssueCollection issues)
          : base(issues)
       { }
 

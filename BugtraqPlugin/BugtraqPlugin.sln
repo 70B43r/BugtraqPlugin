@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPluginContracts", "B
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPluginDataProvider", "BugtraqPluginDataProvider\BugtraqPluginDataProvider.csproj", "{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BugtraqPluginTest", "BugtraqPluginTest\BugtraqPluginTest.csproj", "{88DECFBA-D107-4EA4-BEEB-C05A09A77057}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,9 @@ Global
 		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{02B97776-E5E5-4DCC-9C4E-96BFE1CDB45B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{88DECFBA-D107-4EA4-BEEB-C05A09A77057}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88DECFBA-D107-4EA4-BEEB-C05A09A77057}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88DECFBA-D107-4EA4-BEEB-C05A09A77057}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

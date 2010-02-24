@@ -32,6 +32,7 @@ using System.Runtime.InteropServices;
 
 #if DEBUG
 [assembly: AssemblyConfiguration("Debug Build")]
+[assembly: InternalsVisibleTo("BugtraqPluginTest")]
 #else
 [assembly: AssemblyConfiguration("Release Build")]
 #endif

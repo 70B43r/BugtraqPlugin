@@ -27,6 +27,10 @@ using BugtraqPlugin.Contracts;
 using BugtraqPlugin.Contracts.DomainModel;
 using BugtraqPlugin.Contracts.DomainModel.Parameter;
 using Microsoft.Practices.Unity;
+using System.Text;
+using System.IO;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
 
 namespace BugtraqPlugin.DataProvider
 {
@@ -49,34 +53,42 @@ namespace BugtraqPlugin.DataProvider
       /// <value>The parameter.</value>
       public PluginParameter Parameter { get; private set; }
 
-      /// <summary>
-      /// Gets or sets the issues.
-      /// </summary>
-      public IssueCollection Issues
+      private IssueCollection IssuesInternal
       {
          get
          {
             if (issues == null)
-            {
                issues = new IssueCollection();
-               Load();
-            }
 
             return issues;
          }
       }
 
       /// <summary>
+      /// Gets or sets the issues.
+      /// </summary>
+      public ReadOnlyIssueCollection Issues
+      {
+         get
+         {
+            if (IssuesInternal.Count == 0)
+               Load();
+
+            return new ReadOnlyIssueCollection(IssuesInternal);
+         }
+      }
+
+      /// <summary>
       /// Gets the data request URI.
       /// </summary>
-      protected abstract Uri DataRequestUri { get; }
+      public abstract Uri DataRequestUri { get; }
 
       #endregion
 
       #region Constructors
 
       /// <summary>
-      /// Initializes a new instance of the <see cref="DataProvider"/> class.
+      /// Initializes a new instance of the <see cref="WebDataProvider"/> class.
       /// </summary>
       private WebDataProvider()
       { }
@@ -100,7 +112,7 @@ namespace BugtraqPlugin.DataProvider
       /// Handles loaded the data.
       /// </summary>
       /// <param name="data">The data.</param>
-      protected abstract void HandleData(string data);
+      protected abstract IEnumerable<Issue> HandleData(string data);
 
       /// <summary>
       /// Loads the data.
@@ -118,7 +130,19 @@ namespace BugtraqPlugin.DataProvider
 
             try
             {
-               HandleData(webClient.DownloadString(DataRequestUri));
+               string data = String.Empty;
+               byte[] rawData = webClient.DownloadData(DataRequestUri);
+
+               using (MemoryStream memStream = new MemoryStream(rawData))
+               {
+                  using (StreamReader reader = new StreamReader(memStream, true))
+                  {
+                     data = reader.ReadToEnd();
+                  }
+               }
+
+               this.IssuesInternal.Clear();
+               this.IssuesInternal.AddRange(HandleData(data));
             }
             finally
             {

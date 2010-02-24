@@ -1,0 +1,73 @@
+id,summary,priority,status,owner,type,milestone
+886,Add support for Master tickets,highest,reopened,nkantrowitz,enhancement,next-major-0.1X
+4163,Install test versions of Trac on edgewall.org,highest,new,jonas,task,not applicable
+4431,wiki_to_wikidom,highest,assigned,cboos,enhancement,next-major-0.1X
+5382,[PATCH] base64 encoding/decoding breaks compatiblity with python2.3,highest,reopened,cboos,enhancement,not applicable
+8602,TimeoutError: Unable to get database connection within 20 seconds,highest,reopened,,defect,not applicable
+1,Add a new project summary module.,high,new,cboos,enhancement,1.0
+130,Multi-project support,high,new,cboos,enhancement,experimental
+425,Wiki page name need to support digits and periods,high,assigned,cboos,enhancement,1.0
+493,Use trac with a remote Subversion repository,high,reopened,cboos,enhancement,2.0
+540,Permissions and RSS Feeds,high,reopened,anonymous,defect,next-major-0.1X
+918,[patch] Custom Ticket Fields should support the multiple selection type,high,new,ecarter,enhancement,next-major-0.1X
+1024,Each section should have a edit button,high,assigned,cboos,enhancement,next-major-0.1X
+1106,Add the ability to rename wiki page.,high,reopened,cboos,enhancement,0.12
+1492,support for non-linear changeset sequences for monotone-like VCS,high,new,cboos,enhancement,next-major-0.1X
+1513,Multi-language support in the wiki,high,new,,enhancement,2.0
+1660,Patch to get email notification (with diff) of wiki changes ,high,new,cboos,enhancement,next-major-0.1X
+1962,Due dates on tickets & email notification on overdue dates,high,new,jonas,enhancement,next-major-0.1X
+2035,Changeset commenting,high,new,cboos,enhancement,next-major-0.1X
+2182,configurable date and time formats,high,new,,defect,0.12
+2259,No notification email when adding an attachment to a ticket,high,new,cboos,defect,next-major-0.1X
+2611,"Problem with SVN bindings (SVN 1.3.0, Trac r2771)",high,new,cboos,defect,not applicable
+3332,Mimeview API v2,high,assigned,cboos,enhancement,next-major-0.1X
+3370,"Custom query RSS feed differes from CSV, Tab files",high,reopened,jonas,enhancement,1.0
+3470,r3015 didn't fix my repo move problem,high,new,cboos,defect,next-major-0.1X
+4235,"Wiki formatting lost in "">"" quoted blocks",high,new,cboos,defect,next-major-0.1X
+4245,[PATCH] Tickets are slow with large amount of users and permissions,high,reopened,cmlenz,defect,next-minor-0.12.x
+4320,Dependency error for SpamFilter with Trac 0.10,high,new,mgood,defect,not applicable
+4399,trac.fcgi process memory usage increases with HTTP hits,high,new,jonas,defect,not applicable
+4503,browser authz leaking: failed authzing non-english directory,high,new,cboos,defect,next-minor-0.12.x
+4560,IE7 Missing or invalid form token. Do you have cookies enabled?,high,reopened,jonas,defect,next-minor-0.12.x
+4790,a blockquote after a list gets nested into two <blockquote> tags,high,new,cboos,defect,next-major-0.1X
+4827,TracPermissions to access WebAdmin should be more fine-grained,high,new,cmlenz,enhancement,next-major-0.1X
+4900,The default svn ChangeCollector information about deleted paths is incomplete,high,new,cboos,defect,0.12
+4995,Web-Admin error with Trac milestones,high,new,cmlenz,defect,not applicable
+5010,shutdown hook for plugins,high,new,cboos,enhancement,1.0
+5516,Improve semi-automatic bug reporting,high,reopened,cboos,enhancement,next-minor-0.12.x
+5648,DefaultPermissionGroupProvider not doing its whole job,high,new,athomas,defect,next-major-0.1X
+6007,Security compromise - Restricted svn areas accessible through changeset browsing,high,reopened,cboos,defect,0.12
+6120,Trac reports for existing rev 'No changeset ??? in the repository' + solution,high,new,cboos,defect,0.12-multirepos
+6128,Timeline Paginate Patch,high,reopened,cboos,enhancement,next-major-0.1X
+6135,Enhancement for trac-post-commit-hook.py for Enterprise Workflow,high,new,jonas,enhancement,next-major-0.1X
+6217,New notification/cc scheme - notification preferences per ticket,high,new,eblot,enhancement,next-major-0.1X
+6348,Catch database exceptions in a backend neutral way,high,new,cboos,defect,0.12
+6353,Translation Interfaces for javascript,high,new,jonas,enhancement,0.12
+6387,docs about translation,high,reopened,cboos,defect,0.12
+6654,Changset view is slow when using sub repository path,high,reopened,cboos,defect,0.12
+7116,fine-grained permissions are not applied to directories when browsing sources,high,new,cboos,enhancement,0.12-multirepos
+7160,Problems with character encoding,high,new,cboos,defect,mercurial-plugin
+7173,spam-filter-captcha should not require reentering a ticket after resolving an equation,high,reopened,cboos,enhancement,not applicable
+7217,Non-ASCII characters get replaced with '?' in changeset metadata,high,new,cboos,defect,mercurial-plugin
+7526,ImportError: cannot import name compat,high,reopened,,defect,
+7690,Add doctype supporting mathml,high,new,rblank,enhancement,next-major-0.1X
+7743,Add/document commit-hook,high,new,cboos,enhancement,mercurial-plugin
+7744,source:path@rev targeting a file below a copied dir may fail,high,new,cboos,defect,next-minor-0.12.x
+7785,Trac slow / unreachable objects / database locked,high,reopened,cboos,defect,0.11.7
+7800,Sorting by age broken in browser view,high,new,rblank,defect,next-minor-0.12.x
+8006,Non-Writable Python Egg Cache Directory causes mod_fastcgi to send an error 500 with Apache 2,high,new,,defect,next-minor-0.12.x
+8115,Modules localization workflow,high,new,cboos,enhancement,0.12
+8146,Unified diff,high,new,cboos,defect,next-minor-0.12.x
+8168,"wiki [[Image(URL)]],   the URL address is truncated to its 74 first characters.",high,new,,defect,next-minor-0.12.x
+8180,Bad encoding in mercurial plugin,high,new,cboos,defect,mercurial-plugin
+8417,CachedRepository support in TracMercurial,high,new,cboos,defect,mercurial-plugin
+8443,"postgres and ""IDLE in transaction"" status",high,new,cboos,defect,next-minor-0.12.x
+8459,svn:mergeinfo rendering is far too slow,high,assigned,cboos,defect,next-minor-0.12.x
+8519,internal SQL string matches are always case insensitive,high,new,cboos,defect,0.12
+8538,support non-ascii filenames in mercurial vcs backend,high,assigned,cboos,defect,mercurial-plugin
+8813,"Trac 0.11 really slow, high cpu usage (continued)",high,new,,defect,0.11.7
+8834,Add a generic IResourceChangeListener,high,new,cboos,enhancement,next-major-0.1X
+8866,Admin pages messed up with browsers other than IE,high,new,,defect,0.12
+8875,trac.wsgi does not work with multiple projects,high,new,rblank,defect,0.12
+8884,TICKET_CREATE doesn't permit the state change,high,new,rblank,defect,0.12
+8891,trac-admin resync crashes for TracMercurial because of extsetup,high,new,cboos,defect,mercurial-plugin

@@ -110,8 +110,6 @@ namespace BugtraqPlugin.Contracts.DomainModel.Parameter
             }
             else
             {
-               if (!value.IsWellFormedOriginalString())
-                  value = new Uri(Uri.EscapeUriString(value.OriginalString));
                parameterBuilder.SetParameter(PARAMETER_URI, value.ToString());
             }
          }
@@ -184,10 +182,18 @@ namespace BugtraqPlugin.Contracts.DomainModel.Parameter
       /// <summary>
       /// Initializes a new instance of the <see cref="PluginParameter"/> class.
       /// </summary>
-      /// <param name="parameterString">The parameter string.</param>
-      public PluginParameter(string parameterString)
+      internal PluginParameter()
       {
          parameterBuilder = new ParameterBuilder();
+      }
+
+      /// <summary>
+      /// Initializes a new instance of the <see cref="PluginParameter"/> class.
+      /// </summary>
+      /// <param name="parameterString">The parameter string.</param>
+      public PluginParameter(string parameterString)
+         : this()
+      {
          parameterBuilder.Parse(parameterString);
       }
 

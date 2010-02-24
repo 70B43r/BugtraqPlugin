@@ -1,0 +1,7 @@
+﻿<NUnitProject>
+  <Settings activeconfig="Debug" />
+  <Config name="Debug" appbase="D:\Entwicklung\bugtraqplugin\Build\Debug" configfile="BugtraqPluginTest.dll.config" binpathtype="Auto" runtimeFramework="v2.0.50727">
+    <assembly path="BugtraqPluginTest.dll" />
+  </Config>
+  <Config name="Release" binpathtype="Auto" />
+</NUnitProject>

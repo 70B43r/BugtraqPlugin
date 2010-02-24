@@ -31,7 +31,7 @@ namespace BugtraqPlugin.Contracts
       /// <summary>
       /// Gets the issues.
       /// </summary>
-      IssueCollection Issues { get; }
+      ReadOnlyIssueCollection Issues { get; }
 
       /// <summary>
       /// Loads the data.

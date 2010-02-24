@@ -1,0 +1,4 @@
+bug_id,"bug_severity","priority","op_sys","assigned_to","bug_status","resolution","short_desc"
+290848,"normal","--","Windows XP","adamlock","UNCONFIRMED",,"ActiveX pluginhostctrl dll does not properly resolve relative URLs (w/ patch)"
+338223,"enhancement","--","Linux","adamlock","UNCONFIRMED",,"Mozilla ActiveX Control not working correctly with a link of ""c:\\<something>"""
+402695,"normal","--","Windows Vista","adamlock","UNCONFIRMED",,"Error trying to register the Mozilla ActiveX Control in Vista using regsvr32"
