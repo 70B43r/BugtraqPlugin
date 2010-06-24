@@ -161,12 +161,7 @@ namespace BugtraqPlugin.DataProvider
       /// <returns></returns>
       protected virtual bool CertificateValidationCallback(Object sender, X509Certificate certificate, X509Chain chain, SslPolicyErrors sslPolicyErrors)
       {
-         X509Certificate2 certificate2 = certificate as X509Certificate2;
-
-         if (certificate2 == null)
-            certificate2 = new X509Certificate2(certificate);
-
-         return certificate2.Verify();
+         return (certificate as X509Certificate2 ?? new X509Certificate2(certificate)).Verify();
       }
 
       /// <summary>
